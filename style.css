@@ -94,6 +94,19 @@ body {
     color:white
   }
 
+  .infographic-container {
+    text-align: center;
+  }
+
+  .infographic {
+    width: 700px; /* Adjust width as needed */
+    height: auto;
+    align-items: center;
+    color:white;
+    border-radius: 40px;
+    margin: 0;
+  }
+
   .header-text {
     text-align: center;
   }
@@ -124,7 +137,7 @@ body {
     left: 0;  /* Adjust horizontal offset to left (no offset) */
     width: 100%;  /* Set width to 100% of the section-title */
     height: 100%;  /* Set height to 100% of the section-title */
-    background-color: #2F1640; /* lighter blue color for the bubble */
+    background-color: #49186B; /* lighter blue color for the bubble */
     border-radius: 20px;  /* Match the rounded corners of the section-title */
     z-index: -1;  /* Place the bubble behind the section title text */
   }
@@ -210,7 +223,7 @@ body {
     margin: 0; /* Remove default margin */
     padding: 10px 20px; /* Add padding for content */
     border-radius: 40px;
-    background-color: #2F1640;
+    background-color: #49186B;
     color: #fff;
     font-family: "Crete Round", sans-serif;
     font-weight: normal;
@@ -313,16 +326,72 @@ body {
       margin-top: 20px; /* Add some space between title and description */
   }
   /* Styles for screens wider than 768px (tablets and desktops) */
+
+  .dynamic-boxes-container {
+    display: flex;
+  }
+  
+  .dynamic-box {
+    width: 500px; /* Adjust width as needed */
+    height: 150px; /* Adjust height as needed */
+    margin: 10px; /* Adjust margin as needed */
+    background-color: #DDBAF6; /* Default background color */
+    transition: background-color 0.3s ease; /* Smooth transition */
+    font-family: 'Crete Round';
+    font-style: italic;
+    border-radius: 30px;
+    color: #2F1640;
+    text-align: center;
+    font-size: 2.5em;
+    position: relative; /* Enables positioning of pseudo-elements */
+  }
+  
+  .dynamic-box:hover .dynamic-box-text {
+    opacity: 0; /* Hide default text on hover */
+    transition: opacity 0.3s ease; /* Animate opacity change */
+  }
+  
+  .dynamic-box:after {
+    content: attr(data-hover-text); /* Hover text content */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute; /* Absolute positioning within box */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0,3s ease; /* Animate opacity change */
+    background-color: #DDBAF6;
+    border-radius: 30px;
+    color: #2F1640; /* Hover text color */
+    font-size: 0.4em;
+    font-family: 'Geologica';
+  }
+  
+  .dynamic-box:hover:after {
+    opacity: 1; /* Show hover text on hover */
+  }
+  
+  .dynamic-box-text { /* Style for default text */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center text within box */
+    color: inherit; /* Inherit color from .dynamic-box */
+  }
+  
   @media (min-width: 768px) {
     .container {
-      max-width: 80%;  /* Adjust container width for larger screens */
+      max-width: 80%; /* Adjust container width for larger screens */
     }
     .section-title {
-      font-size: 2em;  /* Adjust font size for subheadings on larger screens */
+      font-size: 2em; /* Adjust font size for subheadings on larger screens */
     }
     /* Add more styles for larger screens if needed */
   }
-  
+
   /* Styles for screens narrower than 768px (mobile phones) */
   @media (max-width: 768px) {
     .container {
