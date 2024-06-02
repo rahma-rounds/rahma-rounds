@@ -23,7 +23,7 @@ body {
   }
   
   a {
-    color: #49186B;
+    color: #2F1640;
     text-decoration: none;
   }
   
@@ -124,7 +124,7 @@ body {
     left: 0;  /* Adjust horizontal offset to left (no offset) */
     width: 100%;  /* Set width to 100% of the section-title */
     height: 100%;  /* Set height to 100% of the section-title */
-    background-color: #49186B; /* lighter blue color for the bubble */
+    background-color: #2F1640; /* lighter blue color for the bubble */
     border-radius: 20px;  /* Match the rounded corners of the section-title */
     z-index: -1;  /* Place the bubble behind the section title text */
   }
@@ -172,7 +172,7 @@ body {
   .icon {
     margin-right: 10px;
     font-size: 1.2em;
-    color: #49186B;
+    color: #2F1640;
   }
   
   /* Contact Styles */
@@ -210,7 +210,7 @@ body {
     margin: 0; /* Remove default margin */
     padding: 10px 20px; /* Add padding for content */
     border-radius: 40px;
-    background-color: #49186B;
+    background-color: #2F1640;
     color: #fff;
     font-family: "Crete Round", sans-serif;
     font-weight: normal;
