@@ -4,7 +4,7 @@ body {
     font-family: Geologica, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #e0f2ff;
+    background-color: #DDBAF6;
   }
   
   .container {
@@ -23,7 +23,7 @@ body {
   }
   
   a {
-    color: #3b5998;
+    color: #49186B;
     text-decoration: none;
   }
   
@@ -41,12 +41,13 @@ body {
   }
   /* Add a background color to the top navigation */
   .topnav {
-    background-color: #303F60;
+    background-color: #2F1640;
     overflow: hidden;
   }
 
   /* Style the links inside the navigation bar */
   .topnav a {
+    font-family: "Crete Round", sans-serif;  /* Use "Crete Round" font for subheadings */
     float: left;
     color: #f2f2f2;
     text-align: center;
@@ -58,19 +59,21 @@ body {
 
   /* Change the color of links on hover */
   .topnav a:hover {
-    background-color: #3b5998;
+    font-family: "Crete Round", sans-serif;  /* Use "Crete Round" font for subheadings */
+    background-color: #49186B;
     color: white;
   }
 
   /* Add a color to the active/current link */
   .topnav a.active {
-    background-color: #d0e3f5;
-    color: #303F60;
+    font-family: "Crete Round", sans-serif;  /* Use "Crete Round" font for subheadings */
+    background-color: #DDBAF6;
+    color: #2F1640;
   }
   /* Header Styles */
   
   header {
-    background-color: #303F60;
+    background-color: #2F1640;
     color: #fff;
     padding: 20px 0;
     display: flex;
@@ -96,15 +99,16 @@ body {
   }
   
   .ABC-title {
-    font-size: 4.5em;
+    font-size: 6em;
     margin-bottom: 10px;
   }
   
   /* Section Title Styles */
 
   .section-title {
-      font-family: Kalnia, sans-serif;  /* Use Kalnia font for subheadings */
+      font-family: "Crete Round", sans-serif;  /* Use "Crete Round" font for subheadings */
       font-size: 2.8em;  /* Increase font size for subheadings */
+      font-style: italic;
       margin-bottom: 1em;
       padding: 10px 20px;  /* Adjust padding for content within bubble */
       border-radius: 20px;  /* Create the rounded bubble shape */
@@ -120,11 +124,20 @@ body {
     left: 0;  /* Adjust horizontal offset to left (no offset) */
     width: 100%;  /* Set width to 100% of the section-title */
     height: 100%;  /* Set height to 100% of the section-title */
-    background-color: #3b5998; /* lighter blue color for the bubble */
+    background-color: #49186B; /* lighter blue color for the bubble */
     border-radius: 20px;  /* Match the rounded corners of the section-title */
     z-index: -1;  /* Place the bubble behind the section title text */
   }
   
+  .title-image {
+    background-image: url("images/title.png");  /* Replace with your PNG path */
+    background-size: cover;  /* Resize image to cover the container */
+    background-position: center;  /* Center the image within the container */
+    height: 150px;  /* Adjust height proportionally */
+    width: 1000px;
+    margin: 0 auto; /* Center the element horizontally */
+  }
+
   .islamic-pattern {
     background-image: url("images/banner.png");  /* Replace with your PNG path */
     background-size: cover;  /* Resize image to cover the container */
@@ -144,7 +157,7 @@ body {
     font-size: 1em;  /* Adjust font size for resources (optional) */
     margin-bottom: 1em;  /* Add space between resources */
     padding: 15px;  /* Adjust padding for content within box */
-    background-color: #d0e3f5;  /* Very light blue background */
+    background-color: #DDBAF6;  /* Very light blue background */
     border-radius: 20px;  /* Rounded corners like section titles */
     color: black;  /* Black text for readability */
   }
@@ -159,7 +172,7 @@ body {
   .icon {
     margin-right: 10px;
     font-size: 1.2em;
-    color: #3b5998;
+    color: #49186B;
   }
   
   /* Contact Styles */
@@ -173,27 +186,132 @@ body {
   }
 
   .mission-statement {
-    background-color: #d0e3f5; /* background */
+    background-color: #DDBAF6; /* background */
     padding: 20px;
-    border-radius: 10px;
     position: relative; /* Needed for nested element positioning */
-    color: #303F60;
+    color: #2F1640;
     border-radius: 40px;
-    font-size: 1.8em;
+    font-size: 1.2em;
+    margin-left: 20px; /* Changed to pixels for more common usage */
+    margin-right: 20px; /* Changed to pixels for more common usage */
+  }
+
+  .rounded-line {
+    border: none; /* Remove the default border */
+    height: 5px; /* Set the height of the line */
+    background-color: #C99356; /* Set the color of the line */
+    border-radius: 10px; /* Set the radius to round the ends */
+    margin: 20px 0; /* Set the margin for spacing above and below */
+    margin-left: 170px; /* Changed to pixels for more common usage */
+    margin-right: 170px; /* Changed to pixels for more common usage */
   }
   
   .mission-statement h2 {
     margin: 0; /* Remove default margin */
     padding: 10px 20px; /* Add padding for content */
     border-radius: 40px;
-    background-color: #3b5998;
+    background-color: #49186B;
     color: #fff;
-    font-family: Kalnia, sans-serif;
+    font-family: "Crete Round", sans-serif;
     font-weight: normal;
-    font-size: 0.8em;
+    font-size: 1.3em;
     display: inline-block
   }
-  
+
+  .people-container {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .people-image-box {
+      width: 250px;
+      height: 250px;
+      background-color: #f0f0f0; /* Placeholder color */
+      background-size: cover; /* Ensure the image covers the box */
+      background-position: center; /* Center the image in the box */
+      margin-right: 20px;
+      border-radius: 10px;
+  }
+
+  .people-text-box {
+      flex: 1;
+      align-self: flex-start; /* Allow the text box to grow and take available space */
+  }
+
+  .people-name {
+      font-weight: bold;
+      font-size: 1.5em;
+      font-family: 'Crete Round';
+      font-style: italic;
+  }
+
+  .people-title {
+      font-style: italic;
+      margin-top: 10px; /* Add some space between name and title */
+  }
+
+  .people-description {
+      margin-top: 20px; /* Add some space between title and description */
+  }
+
+  .image-text-left-container {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .image-text-left-image-box {
+    width: 500px;
+    height: 400px;
+    background-color: #f0f0f0; /* Placeholder color */
+    background-size: cover; /* Ensure the image covers the box */
+    background-position: center; /* Center the image in the box */
+    margin-right: 20px;
+    border-radius: 10px;
+  }
+
+  .image-text-left-text-box {
+    flex: 1;
+    align-self: flex-start; /* Allow the text box to grow and take available space */
+  }
+    
+  .event-container {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .event-image-box {
+      width: 250px;
+      height: 250px;
+      background-color: #f0f0f0; /* Placeholder color */
+      background-size: cover; /* Ensure the image covers the box */
+      background-position: center; /* Center the image in the box */
+      margin-right: 20px;
+      border-radius: 10px;
+  }
+
+  .event-text-box {
+      flex: 1;
+      align-self: flex-start; /* Allow the text box to grow and take available space */
+  }
+
+  .event-title {
+      font-weight: bold;
+      font-size: 1.5em;
+      font-family: 'Crete Round';
+      font-style: italic;
+  }
+
+  .event-location {
+      font-style: italic;
+      margin-top: 10px; /* Add some space between name and title */
+  }
+
+  .event-description {
+      margin-top: 20px; /* Add some space between title and description */
+  }
   /* Styles for screens wider than 768px (tablets and desktops) */
   @media (min-width: 768px) {
     .container {
@@ -222,4 +340,36 @@ body {
       height: 75px;  /* Adjust height proportionally */
       width: 300px;
     }
+    .container {
+            display: flex;
+            align-items: flex-start; /* Align items at the start of the container */
+            margin: 20px;
+        }
+
+        .image-box {
+            width: 500px;
+            height: 500px;
+            background-color: #f0f0f0; /* Placeholder color */
+            background-size: cover; /* Ensure the image covers the box */
+            background-position: center; /* Center the image in the box */
+            margin-right: 20px;
+        }
+
+        .text-box {
+            flex: 1; /* Allow the text box to grow and take available space */
+        }
+
+        .name {
+            font-weight: bold;
+            font-size: 1.5em; /* Slightly larger font size */
+        }
+
+        .title {
+            font-style: italic;
+            margin-top: 10px; /* Add some space between name and title */
+        }
+
+        .description {
+            margin-top: 20px; /* Add some space between title and description */
+        }
   }
