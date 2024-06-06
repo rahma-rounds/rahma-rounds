@@ -5,6 +5,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #DDBAF6;
+    color: #2F1640;
   }
   
   .container {
@@ -150,18 +151,7 @@ body {
     width: 1000px;
     margin: 0 auto; /* Center the element horizontally */
   }
-
-  .islamic-pattern {
-    background-image: url("images/banner.png");  /* Replace with your PNG path */
-    background-size: cover;  /* Resize image to cover the container */
-    background-position: center;  /* Center the image within the container */
-    height: 150px;  /* Adjust height proportionally */
-    width: 600px;
-    margin: 0 auto; /* Center the element horizontally */
-  }
-  
-  /* Resources & Get Involved Styles */
-  
+    
   .resources {
     margin-bottom: 2em;  /* Add some space below the resources section */
   }
@@ -172,14 +162,7 @@ body {
     padding: 15px;  /* Adjust padding for content within box */
     background-color: #DDBAF6;  /* Very light blue background */
     border-radius: 20px;  /* Rounded corners like section titles */
-    color: black;  /* Black text for readability */
-  }
-  
-  .resource h3 {
-    font-weight: bold;  /* Make resource names bold (already set in HTML) */
-    display: flex;  /* Make the heading a flex container */
-    align-items: center;  /* Align content vertically within the flexbox */
-    justify-content: space-between;  /* Horizontally center content */
+    color: #2F1640;
   }
   
   .icon {
@@ -392,53 +375,110 @@ body {
     /* Add more styles for larger screens if needed */
   }
 
-  /* Styles for screens narrower than 768px (mobile phones) */
-  @media (max-width: 768px) {
+  /* Styles for smartphones (max-width: 479px) */
+  @media (max-width: 767px) {
     .container {
-      max-width: 90%;  /* Adjust container width for smaller screens */
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: flex-start; /* Align items at the start of the container */
+      margin: 20px;
     }
-    .msdn-title {
-      font-size: 3em;  /* Adjust font size for title on smaller screens */
-    }
-    .section-title {
-      font-size: 1.5em;  /* Adjust font size for subheadings on smaller screens */
-      padding: 5px 10px;  /* Adjust padding for smaller screens */
-    }
-    /* Add more styles for mobile screens if needed */
-    .islamic-pattern {
+    .title-image {
+      background-image: url("images/title.png");  /* Replace with your PNG path */
+      background-size: cover;  /* Resize image to cover the container */
+      background-position: center;  /* Center the image within the container */
       height: 75px;  /* Adjust height proportionally */
-      width: 300px;
+      width: 500px;
+      margin: 0 auto; /* Center the element horizontally */
     }
+
+    .mission-statement {
+      background-color: #DDBAF6; /* background */
+      padding: 20px;
+      position: relative; /* Needed for nested element positioning */
+      color: #2F1640;
+      border-radius: 40px;
+      font-size: 0.8em;
+      margin-left: 20px; /* Changed to pixels for more common usage */
+      margin-right: 20px; /* Changed to pixels for more common usage */
+    }
+
+    .section-title {
+      font-size: 1.5em; /* Adjust font size for subheadings on smaller screens */
+      padding: 5px 10px; /* Adjust padding for smaller screens */
+      width: 450px;
+    }
+
+    .section-title::before {
+      content: "";  /* Empty content for the pseudo-element */
+      position: absolute;  /* Position the element relative to the section-title */
+      top: 0;  /* Adjust vertical offset to top (no offset) */
+      left: 0;  /* Adjust horizontal offset to left (no offset) */
+      width: 100%;  /* Set width to 100% of the section-title */
+      height: 100%;  /* Set height to 100% of the section-title */
+      background-color: #49186B; /* lighter blue color for the bubble */
+      border-radius: 20px;  /* Match the rounded corners of the section-title */
+      z-index: -1;  /* Place the bubble behind the section title text */
+    }
+
+    /* Responsive layout for mobile (example) */
     .container {
-            display: flex;
-            align-items: flex-start; /* Align items at the start of the container */
-            margin: 20px;
-        }
+      display: flex;
+      align-items: flex-start; /* Align items at the start of the container */
+      margin: 20px;
+    }
 
-        .image-box {
-            width: 500px;
-            height: 500px;
-            background-color: #f0f0f0; /* Placeholder color */
-            background-size: cover; /* Ensure the image covers the box */
-            background-position: center; /* Center the image in the box */
-            margin-right: 20px;
-        }
+    .about-us {
+      max-width: 400px;
+      font-size: 0.8em;
+      align-items: center;
+    }
 
-        .text-box {
-            flex: 1; /* Allow the text box to grow and take available space */
-        }
+    .dynamic-box {
+      max-width: 150px;
+      font-size: 1.8em;
+    }
 
-        .name {
-            font-weight: bold;
-            font-size: 1.5em; /* Slightly larger font size */
-        }
+    .resources {
+      max-width: 450px;
+    }
 
-        .title {
-            font-style: italic;
-            margin-top: 10px; /* Add some space between name and title */
-        }
+    .infographic {
+      max-width: 400px;
+    }
 
-        .description {
-            margin-top: 20px; /* Add some space between title and description */
-        }
-  }
+    .people-image-box {
+      width: 150px;
+    }
+
+    .event-image-box {
+      width: 150px;
+    }
+
+    .image-text-left-container {
+      display: flex;
+      align-items: center;
+      padding: 20px;
+      flex-direction: column;
+    }
+  
+    .image-text-left-image-box {
+      width: 300px;
+      height: 240px;
+      background-size: cover; /* Ensure the image covers the box */
+      background-position: center; /* Center the image in the box */
+      margin-right: 20px;
+      border-radius: 10px;
+    }
+  
+    .image-text-left-text-box {
+      flex: 1;
+      align-self: flex-start; /* Allow the text box to grow and take available space */
+      font-size: 0.8em;
+    }
+
+    .Mentorship-description {
+      font-size: 0.8em;
+    }
+}
