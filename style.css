@@ -377,13 +377,21 @@ body {
 
   /* Styles for smartphones (max-width: 479px) */
   @media (max-width: 767px) {
+
+    body {
+      width: 510px;
+    }
     .container {
       display: flex;
       justify-content: center;
       flex-direction: column;
       align-items: flex-start; /* Align items at the start of the container */
-      margin: 20px;
     }
+
+    header {
+      width: 510px;
+    }
+
     .title-image {
       background-image: url("images/title.png");  /* Replace with your PNG path */
       background-size: cover;  /* Resize image to cover the container */
@@ -407,7 +415,7 @@ body {
     .section-title {
       font-size: 1.5em; /* Adjust font size for subheadings on smaller screens */
       padding: 5px 10px; /* Adjust padding for smaller screens */
-      width: 450px;
+      width: 400px;
     }
 
     .section-title::before {
@@ -427,6 +435,7 @@ body {
       display: flex;
       align-items: flex-start; /* Align items at the start of the container */
       margin: 20px;
+      align-content: center;
     }
 
     .about-us {
