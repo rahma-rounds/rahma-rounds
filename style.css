@@ -50,7 +50,7 @@ body {
   .topnav a {
     font-family: "Crete Round", sans-serif;  /* Use "Crete Round" font for subheadings */
     float: left;
-    color: #f2f2f2;
+    color: #DDBAF6;
     text-align: center;
     padding: 14px 16px;
     border-radius: 5px;
@@ -61,15 +61,15 @@ body {
   /* Change the color of links on hover */
   .topnav a:hover {
     font-family: "Crete Round", sans-serif;  /* Use "Crete Round" font for subheadings */
-    background-color: #49186B;
-    color: white;
+    background-color: #2F1640;
+    color: #fff;
   }
 
   /* Add a color to the active/current link */
   .topnav a.active {
     font-family: "Crete Round", sans-serif;  /* Use "Crete Round" font for subheadings */
-    background-color: #DDBAF6;
-    color: #2F1640;
+    background-color: #2F1640;
+    color: #fff;
   }
   /* Header Styles */
   
@@ -364,7 +364,94 @@ body {
     transform: translate(-50%, -50%); /* Center text within box */
     color: inherit; /* Inherit color from .dynamic-box */
   }
+
+  .button-box {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    align-self: center;
+  }
   
+  .button-box img {
+    width: 350px;
+    align-self: center;
+  }
+  
+  .button-container {
+    display: flex;
+    width: calc(100% - 20px);
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  
+  .image-button {
+    flex: 1 0 auto;
+    margin: 5px;
+    width: 200px;
+    height: 150px;
+    border-radius: 20px;
+    border-width: 0px;
+  }
+  
+  /* Hover styles for image button (defined previously) */
+  
+  .image-button--aamc_exam {
+    background-image: url("images/aamc_exam.png"); /* Replace with your image path */
+  }
+
+  .image-button--aamc_exam:hover {
+    background-image: url("images/aamc_examh.png"); /* Replace with your image path */
+  }
+  
+  .image-button--kap1exam {
+    background-image: url("images/kap1exam.png"); /* Replace with your image path */
+  }
+  
+  .image-button--kap1exam:hover {
+    background-image: url("images/kap1examh.png"); /* Replace with your image path */
+  }
+
+  .image-button--PR1exam {
+    background-image: url("images/PR1exam.png"); /* Replace with your image path */
+  }
+  
+  .image-button--PR1exam:hover {
+    background-image: url("images/PR1examh.png"); /* Replace with your image path */
+  }
+
+  .image-button--bluprintexam {
+    background-image: url("images/bluprintexam.png"); /* Replace with your image path */
+  }
+
+  .image-button--bluprintexam:hover {
+    background-image: url("images/bluprintexamh.png"); /* Replace with your image path */
+  }
+
+  .image-button--mpexam {
+    background-image: url("images/mpexam.png"); /* Replace with your image path */
+  }
+
+  .image-button--mpexam:hover {
+    background-image: url("images/mpexamh.png"); /* Replace with your image path */
+  }
+
+  .image-button--magooshexam {
+    background-image: url("images/magooshexam.png"); /* Replace with your image path */
+  }
+  
+  .image-button--magooshexam:hover {
+    background-image: url("images/magooshexamh.png"); /* Replace with your image path */
+  }
+
+  .image-button--miledown {
+    background-image: url("images/miledown.png"); /* Replace with your image path */
+  }
+  
+  .image-button--miledown:hover {
+    background-image: url("images/miledownh.png"); /* Replace with your image path */
+  }
+    
   @media (min-width: 768px) {
     .container {
       max-width: 80%; /* Adjust container width for larger screens */
@@ -390,6 +477,17 @@ body {
 
     header {
       width: 510px;
+    }
+
+    .topnav a {
+      font-family: "Crete Round", sans-serif;  /* Use "Crete Round" font for subheadings */
+      float: left;
+      color: #DDBAF6;
+      text-align: center;
+      padding: 12px 10px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-size: 12px;
     }
 
     .title-image {
@@ -489,5 +587,27 @@ body {
 
     .Mentorship-description {
       font-size: 0.8em;
+    }
+
+    .button-container {
+      display: flex;
+      width: calc(100% - 20px);
+      justify-content: center;
+      flex-wrap: wrap;
+      flex-direction: row;
+    }
+    
+    .image-button {
+      flex: 1 0 auto;
+      margin: 5px;
+      width: 200px;
+      height: 150px;
+      border-radius: 20px;
+      border-width: 0px;
+    }
+
+    .button-box img {
+      width: 400px;
+      justify-self: center;
     }
 }
