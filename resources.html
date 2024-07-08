@@ -26,7 +26,61 @@
   <main class="container">
     <section class="Mentorship-descrption">
         <p style="font-family: Crete Round; font-size: 1.8em; text-align: center;">Welcome to our Resources page!</p>
-        <p style="font-family: Crete Round; font-size: 1.4em; text-align: center;">Here you can find all kinds of pre-med resources from Free MCAT Practice Exams to and Admissions timeline. Explore this page to find resoruces that can help you on your journey to become a physician!</p>
+        <p style="font-family: Crete Round; font-size: 1.4em; text-align: center;">Here you can find all kinds of pre-med resources from Free MCAT Practice Exams to and Admissions timeline. Explore this page to find resources that can help you on your journey to become a physician!</p>
+    </section>
+
+    <section class="Undergrad Timeline">
+      <h2 class="section-title">Undergrad Timeline</h2>
+      <section class="Freshman Year">
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="item-header">Freshman Year</div>
+            <div class="item-content">Here are the resources you might find useful as a freshman. There is no need to use every link. Just browse around to find what you might find useful.</div>
+            <div class="sub-timeline">
+              <div class="sub-item">
+                <img src="images/gen_chem.jpg" alt="Gen Chem Image" class="sub-item-image">
+                <div class="sub-item-content">
+                  <h4 class="sub-item-title">Fall Semester</h4>
+                  <p style="font-size: .6em; width: 850px;">Start your most basic science general classes (General Biology and Chemistry). Explore to find which pre-med extracurricular at your school and in your local area. Join pre-med club, start volunteering in a healthcare setting (hospital, clinic, etc.), seek research entry level opportunities</p>
+                </div>
+              </div>
+              <div class="sub-item">
+                <img src="images/gen_chem.jpg" alt="Gen Chem Image" class="sub-item-image">
+                <div class="sub-item-content">
+                  <h4 class="sub-item-title">Spring Semester</h4>
+                  <p style="font-size: .6em; width: 850px;">You will likely want to continue with the second semester of you general science courses. This semester is where you might want to nail down your extracurricular activities and maybe seek leadership activities.</p>
+                </div>
+              </div>
+              </div>
+          </div>
+          </div>
+      </section>
+      <section class="Sophomore Year">
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="item-header">Sophomore Year</div>
+            <div class="item-content">Here are the resources you might find useful as a freshman. There is no need to use every link. Just browse around to find what you might find useful.</div>
+            <div class="sub-timeline">
+              <div class="sub-item">
+                <img src="images/gen_chem.jpg" alt="Gen Chem Image" class="sub-item-image">
+                <div class="sub-item-content">
+                  <h4 class="sub-item-title">Fall Semester</h4>
+                  <p style="font-size: .6em; width: 850px;">Courses: Organic Chemistry I with Lab, Physics I with Lab, Biochemistry, Psychology or Sociology (whichever wasn't taken first year).
+                    Activities: Continue research, shadow physicians, prepare for summer research or internship programs.</p>
+                </div>
+              </div>
+              <div class="sub-item">
+                <img src="images/gen_chem.jpg" alt="Gen Chem Image" class="sub-item-image">
+                <div class="sub-item-content">
+                  <h4 class="sub-item-title">Spring Semester</h4>
+                  <p style="font-size: .6em; width: 850px;">Courses: Organic Chemistry II with Lab, Physics II with Lab, Advanced Biology (Genetics, Microbiology, etc.), Humanities or Social Science elective.
+                    Activities: Continue volunteering and shadowing, start studying for the MCAT, apply for summer programs (research, clinical internships, etc.).</p>
+                </div>
+              </div>
+              </div>
+          </div>
+          </div>
+      </section>
     </section>
 
     <section class="MCAT Resources">
@@ -65,3 +119,15 @@
             </div>
           </div>
     </section>
+
+    <script>
+      const timelineItems = document.querySelectorAll('.timeline-item');
+
+      timelineItems.forEach(item => {
+        const header = item.querySelector('.item-header');
+        header.addEventListener('click', () => {
+          item.classList.toggle('active'); // Add/remove active class
+        });
+      });
+    </script>
+</body>

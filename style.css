@@ -129,6 +129,10 @@ body {
       position: relative;  /* Required for positioning the pseudo-element */
       color: white;  /* Set text color to white */
       font-weight: 400;  /* Set font weight to normal (400) */
+      background-image: url("images/school_background_2.png"); /* Add background image */
+      background-repeat: no-repeat; /* Control image repetition (optional) */
+      background-position: center; /* Control image position (optional) */
+      background-size: cover; /* Control image size (optional) */
     }
   
   .section-title::before {
@@ -138,7 +142,7 @@ body {
     left: 0;  /* Adjust horizontal offset to left (no offset) */
     width: 100%;  /* Set width to 100% of the section-title */
     height: 100%;  /* Set height to 100% of the section-title */
-    background-color: #49186B; /* lighter blue color for the bubble */
+    background-color: #49186B; /* lighter color for the bubble */
     border-radius: 20px;  /* Match the rounded corners of the section-title */
     z-index: -1;  /* Place the bubble behind the section title text */
   }
@@ -450,6 +454,115 @@ body {
   
   .image-button--miledown:hover {
     background-image: url("images/miledownh.png"); /* Replace with your image path */
+  }
+
+  .timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+    width: 100%;  /* Adjust width as needed */
+  }
+  
+  .timeline-item {
+    margin: 10px 0;  /* Add spacing between items */
+    position: relative;  /* Needed for sub-timeline positioning */
+  }
+  
+  .item-header {
+    background-color: #2F1640; /* Background color (optional) */
+    color: #fff;
+    padding: 10px;
+    cursor: pointer; /* Change cursor on hover for expand/collapse */
+    width: 1000px; /* Adjust width as needed */
+    height: 100px; /* Adjust height as needed */
+    text-align: center;
+    font-family: "Crete Round";
+    font-size: 5em;
+    border-radius: 20px;
+    background-image: url("images/school_background.png"); /* Add background image */
+    background-repeat: no-repeat; /* Control image repetition (optional) */
+    background-position: center; /* Control image position (optional) */
+    background-size: cover; /* Control image size (optional) */
+  }
+  
+  .item-content {
+    padding: 10px;
+    background-color: #DDBAF6;
+    color: #2F1640;
+    display: none;  /* Initially hide content of large boxes */
+    text-align: center;
+    font-family: "Crete Round";
+    font-size: 1.8em;
+    width: 1000px;
+    border-radius: 20px;
+  }
+  
+  .sub-timeline {
+    position: absolute;
+    top: 100%;  /* Position below the large box */
+    left: 0;
+    width: 100%;
+    background-color: #49186B;
+    display: none;  /* Initially hide sub-timeline */
+    border-radius: 20px;
+    background-image: url("images/school_background_2.png"); /* Add background image */
+    background-repeat: no-repeat; /* Control image repetition (optional) */
+    background-position: center; /* Control image position (optional) */
+    background-size: cover; /* Control image size (optional) */
+  }
+  
+  .sub-item {
+    padding: 5px 20px;
+    width: 100%;
+    text-align: left;
+    margin-left: 20px;
+    font-family: Geologica;
+    font-size: 1.8em;
+    border-radius: 20px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+  }
+
+  .sub-item-image {
+    width: 100px; /* Adjust width as needed */
+    height: 130px; /* Adjust height as needed */
+    object-fit: cover;  /* Resize image to fit container */
+    float: left; /* Float image to the left */
+    margin-right: 10px;  /* Add margin between image and text */
+    border-radius: 10px;
+  }
+  
+  .sub-item-content {
+    clear: left; /* Clear float after image */
+  }
+  
+  .sub-item-title {
+    font-weight: bold;
+    margin-bottom: 1px;
+  }
+  
+  .timeline-item.active .item-content,
+  .timeline-item.active .sub-timeline {
+    display: block;  /* Show content on click */
+  }  
+
+  .main {
+    display: flex; /* Make the main container a flexbox */
+    flex-direction: column; /* Stack elements vertically */
+    min-height: 100vh; /* Set minimum height to viewport height */
+  }
+  
+  .Timeline {
+    flex: 1; /* Allow timeline to fill remaining space */
+  }
+  
+  .timeline-item.active .item-content {
+    display: block;
+  }
+  
+  .timeline-item.active {
+    margin-bottom: 400px; /* Add margin-bottom when expanded */
   }
     
   @media (min-width: 768px) {
