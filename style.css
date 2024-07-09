@@ -562,7 +562,7 @@ body {
   }
   
   .timeline-item.active {
-    margin-bottom: 425px; /* Add margin-bottom when expanded */
+    margin-bottom: 450px; /* Add margin-bottom when expanded */
   }
     
   @media (min-width: 768px) {
