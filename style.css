@@ -526,7 +526,7 @@ body {
 
   .sub-item-image {
     width: 100px; /* Adjust width as needed */
-    height: 130px; /* Adjust height as needed */
+    height: 160px; /* Adjust height as needed */
     object-fit: cover;  /* Resize image to fit container */
     float: left; /* Float image to the left */
     margin-right: 10px;  /* Add margin between image and text */
@@ -562,7 +562,7 @@ body {
   }
   
   .timeline-item.active {
-    margin-bottom: 400px; /* Add margin-bottom when expanded */
+    margin-bottom: 425px; /* Add margin-bottom when expanded */
   }
     
   @media (min-width: 768px) {
