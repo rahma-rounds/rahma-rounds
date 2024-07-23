@@ -564,6 +564,14 @@ body {
   .timeline-item.active {
     margin-bottom: 450px; /* Add margin-bottom when expanded */
   }
+
+  .poster-container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+  }
     
   @media (min-width: 768px) {
     .container {
@@ -722,5 +730,16 @@ body {
     .button-box img {
       width: 400px;
       justify-self: center;
+    }
+
+    .resource-box {
+      width: 400px;
+    }
+
+    .event-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
     }
 }
